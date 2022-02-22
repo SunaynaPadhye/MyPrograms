@@ -49,7 +49,7 @@ public:
         else if(root2 == NULL)
             return root1;
         else {
-            root1 -> val += root2 -> val;
+            root1 -> val += root2 -> val;                   //adds value of two coinciding nodes
             root1 -> left = mergeTrees(root1 -> left, root2 -> left);
             root1 -> right = mergeTrees(root1 -> right, root2 -> right);
             return root1;

@@ -35,16 +35,12 @@ Constraints:
 
 */
 
-// { Driver Code Starts
-//Initial Template for C++
 
 #include <bits/stdc++.h>
 using namespace std;
  
 
- // } Driver Code Ends
-//User function Template for C++
-
+//APPROACH 1:
 class Solution
 {
     public:
@@ -76,9 +72,23 @@ class Solution
     }
 };
 
-// { Driver Code Starts.
+//APPROACH 2:
+class Solution
+{
+    public:
+    //Function to find the first position with different bits.
+    int posOfRightMostDiffBit(int m, int n)
+    {
+        int x = m ^ n;
 
-// Driver Code
+        if(x == 0)
+            return -1;
+        
+        return log2(x & -x) + 1;
+        // Your code here
+    }
+};
+
 int main()
 {   
     int t;
@@ -91,4 +101,4 @@ int main()
          cout << ob.posOfRightMostDiffBit(m, n)<<endl;
     }
     return 0;     
-}   // } Driver Code Ends
+}   

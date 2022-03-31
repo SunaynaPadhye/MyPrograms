@@ -71,6 +71,20 @@ class Solution{
     }
 };
 
+//APPROACH 3:
+class Solution{
+    public:
+    // Function to find number of bits needed to be flipped to convert A to B
+    int countBitsFlip(int a, int b){
+        int n = log2(max(2, max(a,b))) + 1;
+        int count = 0;
+        for(int i = 0; i < n; i++){
+            count += ((a >> i) & 1) ^ ((b >> i) & 1);
+        }
+        return count;
+    }
+};
+
 int main()
 {
 	int t;

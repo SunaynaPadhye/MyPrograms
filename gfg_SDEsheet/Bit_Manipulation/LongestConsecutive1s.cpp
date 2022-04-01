@@ -42,6 +42,8 @@ using namespace std;
 /*  Function to calculate the longest consecutive ones
 *   N: given input to calculate the longest consecutive ones
 */
+
+//APPROACH 1:
 class Solution
 {
     public:
@@ -66,6 +68,21 @@ class Solution
         
         return maxcnt;
         
+    }
+};
+
+//APPROACH 2:
+class Solution
+{
+    public:
+    int maxConsecutiveOnes(int N)
+    {
+        int count;
+        while(N!=0){
+            N = N & (N << 1);
+            count++;
+        }
+        return count;
     }
 };
 

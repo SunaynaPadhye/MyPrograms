@@ -34,17 +34,8 @@ Constraints:
 
 */
 
-// { Driver Code Starts
-//Initial Template for C++
-
-
 #include<bits/stdc++.h>
 using namespace std;
-
-
- // } Driver Code Ends
-//User function Template for C++
-
 
 //APPROACH 1:
 class Solution
@@ -67,7 +58,6 @@ class Solution
 };
 
 //APPROACH 2:
-//APPROACH 1:
 class Solution
 {
     public:
@@ -79,9 +69,6 @@ class Solution
     }
 };
 
-// { Driver Code Starts.
-
-// Driver code
 int main()
 {
     int t;
@@ -95,4 +82,3 @@ int main()
     }
 	return 0;
 }
-  // } Driver Code Ends
